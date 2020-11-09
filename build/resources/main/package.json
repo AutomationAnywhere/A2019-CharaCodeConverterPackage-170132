@@ -1,0 +1,99 @@
+{
+    "name": "A2019DemoPackage",
+    "label": "[[label]]",
+    "description": "[[description]]",
+    "group": "com.automationanywhere",
+    "artifactName": "Characode_Converter",
+    "packageVersion": "2.0.1-20201102-223457",
+    "codeVersion": "2.0.1-20201102-223457",
+    "commands": [
+        {
+            "name": "Convert_characode",
+            "label": "[[Characode.label]]",
+            "description": "[[Characode.description]]",
+            "nodeLabel": "[[Characode.node_label]]",
+            "mainClass": "com.automationanywhere.botcommand.samples.commands.basic.CharcodeConverterCommand",
+            "icon": "pkg.svg",
+            "attributes": [
+                {
+                    "name": "sOriginalFile",
+                    "label": "[[Characode.File1.label]]",
+                    "type": "FILE",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        },
+                        {
+                            "name": "FILE_LOCAL"
+                        }
+                    ]
+                },
+                {
+                    "name": "sOriginalCode",
+                    "label": "[[Characode.option.label]]",
+                    "type": "SELECT",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "[[Characode.option1.label]]",
+                            "value": "Shift_JIS"
+                        },
+                        {
+                            "label": "[[Characode.option2.label]]",
+                            "value": "UTF-8"
+                        },
+                        {
+                            "label": "[[Characode.option3.label]]",
+                            "value": "EUC-JP"
+                        }
+                    ]
+                },
+                {
+                    "name": "sTargetFile",
+                    "label": "[[Characode.File1.label]]",
+                    "type": "TEXT",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        },
+                        {
+                            "name": "FILE_LOCAL"
+                        }
+                    ]
+                },
+                {
+                    "name": "sTargetCode",
+                    "label": "[[Characode.option.label]]",
+                    "type": "SELECT",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "[[Characode.option1.label]]",
+                            "value": "Shift_JIS"
+                        },
+                        {
+                            "label": "[[Characode.option2.label]]",
+                            "value": "UTF-8"
+                        },
+                        {
+                            "label": "[[Characode.option4.label]]",
+                            "value": "UTF-8BOM"
+                        },
+                        {
+                            "label": "[[Characode.option3.label]]",
+                            "value": "EUC-JP"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
